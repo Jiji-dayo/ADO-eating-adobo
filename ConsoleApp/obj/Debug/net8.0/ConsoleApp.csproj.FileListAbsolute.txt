@@ -1,0 +1,15 @@
+/workspaces/ADO-eating-adobo/ConsoleApp/bin/Debug/net8.0/ConsoleApp
+/workspaces/ADO-eating-adobo/ConsoleApp/bin/Debug/net8.0/ConsoleApp.deps.json
+/workspaces/ADO-eating-adobo/ConsoleApp/bin/Debug/net8.0/ConsoleApp.runtimeconfig.json
+/workspaces/ADO-eating-adobo/ConsoleApp/bin/Debug/net8.0/ConsoleApp.dll
+/workspaces/ADO-eating-adobo/ConsoleApp/bin/Debug/net8.0/ConsoleApp.pdb
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.AssemblyInfoInputs.cache
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.AssemblyInfo.cs
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.csproj.CoreCompileInputs.cache
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.sourcelink.json
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.dll
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/refint/ConsoleApp.dll
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.pdb
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ConsoleApp.genruntimeconfig.cache
+/workspaces/ADO-eating-adobo/ConsoleApp/obj/Debug/net8.0/ref/ConsoleApp.dll
