@@ -1,0 +1,15 @@
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.AssemblyInfoInputs.cache
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.AssemblyInfo.cs
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.csproj.CoreCompileInputs.cache
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.sourcelink.json
+/workspaces/ADO-eating-adobo/Activity4/bin/Debug/net8.0/Activity4
+/workspaces/ADO-eating-adobo/Activity4/bin/Debug/net8.0/Activity4.deps.json
+/workspaces/ADO-eating-adobo/Activity4/bin/Debug/net8.0/Activity4.runtimeconfig.json
+/workspaces/ADO-eating-adobo/Activity4/bin/Debug/net8.0/Activity4.dll
+/workspaces/ADO-eating-adobo/Activity4/bin/Debug/net8.0/Activity4.pdb
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.dll
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/refint/Activity4.dll
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.pdb
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/Activity4.genruntimeconfig.cache
+/workspaces/ADO-eating-adobo/Activity4/obj/Debug/net8.0/ref/Activity4.dll
