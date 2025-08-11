@@ -1,0 +1,15 @@
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.AssemblyInfoInputs.cache
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.AssemblyInfo.cs
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.csproj.CoreCompileInputs.cache
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.sourcelink.json
+/workspaces/ADO-eating-adobo/OOPconsole3/bin/Debug/net8.0/OOPconsole3
+/workspaces/ADO-eating-adobo/OOPconsole3/bin/Debug/net8.0/OOPconsole3.deps.json
+/workspaces/ADO-eating-adobo/OOPconsole3/bin/Debug/net8.0/OOPconsole3.runtimeconfig.json
+/workspaces/ADO-eating-adobo/OOPconsole3/bin/Debug/net8.0/OOPconsole3.dll
+/workspaces/ADO-eating-adobo/OOPconsole3/bin/Debug/net8.0/OOPconsole3.pdb
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.dll
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/refint/OOPconsole3.dll
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.pdb
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/OOPconsole3.genruntimeconfig.cache
+/workspaces/ADO-eating-adobo/OOPconsole3/obj/Debug/net8.0/ref/OOPconsole3.dll

@@ -1,0 +1,15 @@
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.AssemblyInfoInputs.cache
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.AssemblyInfo.cs
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.csproj.CoreCompileInputs.cache
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.sourcelink.json
+/workspaces/ADO-eating-adobo/Activity5/bin/Debug/net8.0/Activty5
+/workspaces/ADO-eating-adobo/Activity5/bin/Debug/net8.0/Activty5.deps.json
+/workspaces/ADO-eating-adobo/Activity5/bin/Debug/net8.0/Activty5.runtimeconfig.json
+/workspaces/ADO-eating-adobo/Activity5/bin/Debug/net8.0/Activty5.dll
+/workspaces/ADO-eating-adobo/Activity5/bin/Debug/net8.0/Activty5.pdb
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.dll
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/refint/Activty5.dll
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.pdb
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/Activty5.genruntimeconfig.cache
+/workspaces/ADO-eating-adobo/Activity5/obj/Debug/net8.0/ref/Activty5.dll
