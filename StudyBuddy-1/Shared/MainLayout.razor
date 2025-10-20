@@ -1,0 +1,42 @@
+@inherits LayoutComponentBase
+
+<div class="main-layout">
+    <header>
+        <h1>StudyBuddy</h1>
+        <NavMenu />
+    </header>
+
+    <div class="content">
+        @Body
+    </div>
+
+    <footer>
+        <p>&copy; 2023 StudyBuddy. All rights reserved.</p>
+    </footer>
+</div>
+
+<style>
+    .main-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: #007bff;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .content {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    footer {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 1rem;
+    }
+</style>

@@ -1,0 +1,6 @@
+/workspaces/ADO-eating-adobo/StudyBuddy/obj/Debug/net8.0/StudyBuddy.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ADO-eating-adobo/StudyBuddy/obj/Debug/net8.0/StudyBuddy.AssemblyInfoInputs.cache
+/workspaces/ADO-eating-adobo/StudyBuddy/obj/Debug/net8.0/StudyBuddy.AssemblyInfo.cs
+/workspaces/ADO-eating-adobo/StudyBuddy/obj/Debug/net8.0/StudyBuddy.csproj.CoreCompileInputs.cache
+/workspaces/ADO-eating-adobo/StudyBuddy/obj/Debug/net8.0/StudyBuddy.MvcApplicationPartsAssemblyInfo.cache
+/workspaces/ADO-eating-adobo/StudyBuddy/obj/Debug/net8.0/StudyBuddy.sourcelink.json

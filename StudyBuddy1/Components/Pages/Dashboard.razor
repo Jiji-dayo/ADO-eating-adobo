@@ -1,0 +1,94 @@
+@page "/dashboard"
+
+<h2 class="text-3xl font-bold mb-6 text-blue-700">🎓 Student Dashboard</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+    <!-- Left Section: Tasks -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-3">📋 Your Study Tasks</h3>
+
+        <ul class="space-y-2">
+            @foreach (var task in tasks)
+            {
+                <li class="flex items-center justify-between border-b py-2">
+                    <span>@task.Title</span>
+                    <input type="checkbox" @bind="task.IsDone" />
+                </li>
+            }
+        </ul>
+
+        <div class="mt-4 flex">
+            <input class="border rounded-l-md p-2 w-full" @bind="newTask" placeholder="Add new task..." />
+            <button class="bg-blue-600 text-white px-4 rounded-r-md" @onclick="AddTask">Add</button>
+        </div>
+    </div>
+
+    <!-- Right Section: Study Timer -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-3">⏳ Study Timer</h3>
+        <p class="text-gray-700 mb-3">Stay focused! Time your study sessions.</p>
+
+        <div class="text-4xl font-bold mb-4">@elapsedTime</div>
+
+        <div class="space-x-2">
+            <button class="bg-green-600 text-white px-4 py-2 rounded" @onclick="StartTimer" disabled="@isRunning">Start</button>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded" @onclick="PauseTimer" disabled="@(isRunning == false)">Pause</button>
+            <button class="bg-red-600 text-white px-4 py-2 rounded" @onclick="ResetTimer">Reset</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    // --- Task List ---
+    private List<StudyTask> tasks = new()
+    {
+        new StudyTask { Title = "Review Calculus Notes" },
+        new StudyTask { Title = "Finish Programming Project" },
+        new StudyTask { Title = "Read Chapter 4 - Networking" }
+    };
+
+    private string newTask = "";
+
+    void AddTask()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask))
+        {
+            tasks.Add(new StudyTask { Title = newTask });
+            newTask = "";
+        }
+    }
+
+    // --- Timer ---
+    private System.Timers.Timer timer = new(1000);
+    private int seconds = 0;
+    private bool isRunning = false;
+
+    private string elapsedTime => $"{seconds / 60:D2}:{seconds % 60:D2}";
+
+    protected override void OnInitialized()
+    {
+        timer.Elapsed += (_, _) =>
+        {
+            if (isRunning)
+            {
+                seconds++;
+                InvokeAsync(StateHasChanged);
+            }
+        };
+        timer.Start();
+    }
+
+    void StartTimer() => isRunning = true;
+    void PauseTimer() => isRunning = false;
+    void ResetTimer()
+    {
+        isRunning = false;
+        seconds = 0;
+    }
+
+    public class StudyTask
+    {
+        public string Title { get; set; } = "";
+        public bool IsDone { get; set; }
+    }
+}

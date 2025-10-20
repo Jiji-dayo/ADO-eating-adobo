@@ -1,0 +1,32 @@
+@using Microsoft.AspNetCore.Components.Routing
+
+<nav class="nav-menu">
+    <ul>
+        <li><NavLink href="/" Match="NavLinkMatch.All">Home</NavLink></li>
+        <li><NavLink href="/login">Login</NavLink></li>
+        <li><NavLink href="/signup">Sign Up</NavLink></li>
+        <li><NavLink href="/dashboard">Dashboard</NavLink></li>
+    </ul>
+</nav>
+
+<style>
+    .nav-menu {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    .nav-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .nav-menu li {
+        margin: 0.5rem 0;
+    }
+    .nav-menu a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    .nav-menu a:hover {
+        text-decoration: underline;
+    }
+</style>

@@ -1,0 +1,31 @@
+@page "/signup"
+
+<h2 class="text-2xl font-bold mb-4">Sign Up</h2>
+
+<div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+    <label>Full Name</label>
+    <input class="w-full border rounded p-2 mb-3" @bind="name" placeholder="Enter your name" />
+
+    <label>Email</label>
+    <input class="w-full border rounded p-2 mb-3" @bind="email" placeholder="Enter your email" />
+
+    <label>Password</label>
+    <input type="password" class="w-full border rounded p-2 mb-4" @bind="password" placeholder="Enter password" />
+
+    <button class="bg-green-600 text-white px-4 py-2 rounded" @onclick="SignUpUser">Create Account</button>
+
+    <p class="mt-4 text-sm text-gray-600">
+        Already have an account? <a href="/login" class="text-blue-600 hover:underline">Login</a>
+    </p>
+</div>
+
+@code {
+    private string name = "";
+    private string email = "";
+    private string password = "";
+
+    void SignUpUser()
+    {
+        Console.WriteLine($"Signup: {name}, {email}, {password}");
+    }
+}
