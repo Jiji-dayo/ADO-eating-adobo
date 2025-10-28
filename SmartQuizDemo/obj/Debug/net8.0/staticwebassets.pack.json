@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/obj/Debug/net8.0/compressed/ut30b7ux25.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/obj/Debug/net8.0/scopedcss/bundle/SmartQuizDemo.styles.css",
+      "PackagePath": "staticwebassets/SmartQuizDemo.styles.css"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/SmartQuizDemo/wwwroot/sample-data/weather.json",
+      "PackagePath": "staticwebassets/sample-data/weather.json"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.SmartQuizDemo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.SmartQuizDemo.props",
+      "PackagePath": "build\\SmartQuizDemo.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SmartQuizDemo.props",
+      "PackagePath": "buildMultiTargeting\\SmartQuizDemo.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SmartQuizDemo.props",
+      "PackagePath": "buildTransitive\\SmartQuizDemo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

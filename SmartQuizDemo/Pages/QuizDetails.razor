@@ -1,0 +1,51 @@
+@page "/quiz/{id:int}"
+@inject NavigationManager NavManager
+
+<h3 class="mb-3">🧠 Quiz Details</h3>
+
+@if (quiz == null)
+{
+    <p>Loading quiz...</p>
+}
+else
+{
+    <div class="card p-4 shadow-sm">
+        <h4>@quiz.Title</h4>
+        <p>@quiz.Description</p>
+
+        <button class="btn btn-secondary mt-3" @onclick="GoBack">⬅ Back to Quizzes</button>
+    </div>
+}
+
+@code {
+    [Parameter] public int id { get; set; }
+
+    private Quiz? quiz;
+
+    protected override void OnInitialized()
+    {
+        // Sample quizzes — same as in ViewQuizzes
+        var allQuizzes = new List<Quiz>
+        {
+            new Quiz { Id = 1, Title = "Quiz template #1", Description = "quiz overview... quiz overview..." },
+            new Quiz { Id = 2, Title = "Quiz template #2", Description = "quiz overview... quiz overview..." },
+            new Quiz { Id = 3, Title = "Quiz template #3", Description = "quiz overview... quiz overview..." },
+            new Quiz { Id = 4, Title = "Quiz template #4", Description = "quiz overview... quiz overview..." },
+            new Quiz { Id = 5, Title = "Quiz template #5", Description = "quiz overview... quiz overview..." },
+        };
+
+        quiz = allQuizzes.FirstOrDefault(q => q.Id == id);
+    }
+
+    private void GoBack()
+    {
+        NavManager.NavigateTo("/view-quizzes");
+    }
+
+    public class Quiz
+    {
+        public int Id { get; set; }
+        public string? Title { get; set; }
+        public string? Description { get; set; }
+    }
+}

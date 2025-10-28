@@ -1,0 +1,69 @@
+@page "/view-quizzes"
+@using System.Collections.Generic
+@inject NavigationManager NavManager
+
+<PageTitle>View Quizzes</PageTitle>
+
+<div class="view-quizzes-container p-4">
+    <h3 class="mb-4">Quizzes you created:</h3>
+
+    <div class="quiz-grid">
+        @foreach (var quiz in quizzes)
+        {
+            <div class="quiz-card shadow-sm p-3">
+                <h5>@quiz.Title</h5>
+                <p class="text-muted">@quiz.Description</p>
+
+                <div class="button-group mt-3">
+                    <button class="btn btn-secondary me-2" @onclick="() => EditQuiz(quiz.Id)">Edit</button>
+                    <button class="btn btn-danger me-2" @onclick="() => DeleteQuiz(quiz.Id)">Delete</button>
+                    <button class="btn btn-success" @onclick="() => OpenQuiz(quiz.Id)">Open Quiz</button>
+                </div>
+
+                <div class="mt-3 small text-muted d-flex justify-content-between">
+                    <span>View quiz takers</span>
+                    <span>#Number of items</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Quiz> quizzes = new();
+
+    protected override void OnInitialized()
+    {
+        // Sample data to show that it displays
+        quizzes = new List<Quiz>
+        {
+            new Quiz { Id = 1, Title = "Quiz template #1", Description = "quiz overview... quiz overview... quiz overview..." },
+            new Quiz { Id = 2, Title = "Quiz template #2", Description = "quiz overview... quiz overview... quiz overview..." },
+            new Quiz { Id = 3, Title = "Quiz template #3", Description = "quiz overview... quiz overview... quiz overview..." },
+            new Quiz { Id = 4, Title = "Quiz template #4", Description = "quiz overview... quiz overview... quiz overview..." },
+            new Quiz { Id = 5, Title = "Quiz template #5", Description = "quiz overview... quiz overview... quiz overview..." },
+        };
+    }
+
+    private void EditQuiz(int id)
+    {
+        Console.WriteLine($"Edit quiz {id}");
+    }
+
+    private void DeleteQuiz(int id)
+    {
+        Console.WriteLine($"Delete quiz {id}");
+    }
+    private void OpenQuiz(int id)
+    {
+    NavManager.NavigateTo($"/quiz/{id}");
+    }
+
+
+    public class Quiz
+    {
+        public int Id { get; set; }
+        public string? Title { get; set; }
+        public string? Description { get; set; }
+    }
+}
