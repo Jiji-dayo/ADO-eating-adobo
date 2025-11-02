@@ -1,0 +1,97 @@
+@page "/leaderboard"
+@using System
+@using System.Linq
+@using System.Collections.Generic
+@inject NavigationManager Navigation
+
+<PageTitle>Teacher Leaderboard</PageTitle>
+
+<h3>Student Quiz Leaderboard</h3>
+
+<div class="mb-3">
+    <input type="text" @bind="searchTerm" @bind:event="oninput" placeholder="Search by student name..." class="form-control" />
+</div>
+
+<div class="mb-3">
+    <button @onclick="SortAscending" class="btn btn-primary me-2">Sort Ascending (Lowest Scores First)</button>
+    <button @onclick="SortDescending" class="btn btn-secondary">Sort Descending (Highest Scores First)</button>
+</div>
+
+@if (filteredStudents.Any())
+{
+    <div class="leaderboard-container">
+        @for (int i = 0; i < filteredStudents.Count; i++)
+        {
+            var student = filteredStudents[i];
+            var rank = i + 1;
+            <div class="student-card mb-3 p-3 border rounded">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>Rank: @rank</strong><br />
+                        <span>Name: @student.Name</span><br />
+                        <span>Score: @student.Score</span>
+                    </div>
+                    <button @onclick="() => ViewStudentDetails(student)" class="btn btn-info btn-sm" type="button">View Details</button>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">No students found matching the search criteria.</div>
+}
+
+@code {
+    private List<Student> students = new List<Student>
+    {
+        new Student { Name = "Mark Alaba", Score = 90 },
+        new Student { Name = "Ashlie Ballera", Score = 91 },
+        new Student { Name = "Karl Basconcillo", Score = 92 },
+        new Student { Name = "Arabela Dela Cruz", Score = 94 },
+        new Student { Name = "Gwen Lopez", Score = 100 },
+        new Student { Name = "Matthew Nunez", Score = 93 },
+        new Student { Name = "Laufey", Score = 98 },
+        new Student { Name = "Melanie Martinez", Score = 96 },
+        new Student { Name = "Marjon Umbay", Score = 80 },
+        new Student { Name = "Hindi makausad", Score = 75 },
+        new Student { Name = "Hindi makalaya", Score = 73 },
+        new Student { Name = "Chapell Roan", Score = 69 }
+    };
+    private string searchTerm = string.Empty;
+
+    private List<Student> filteredStudents => students
+        .Where(s => string.IsNullOrEmpty(searchTerm) || (s.Name ?? string.Empty).Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+        .ToList();
+
+    private void SortAscending()
+    {
+        students = students.OrderBy(s => s.Score).ToList();
+    }
+
+    private void SortDescending()
+    {
+        students = students.OrderByDescending(s => s.Score).ToList();
+    }
+
+    private void ViewStudentDetails(Student student)
+    {
+        var safeName = Uri.EscapeDataString(student?.Name ?? string.Empty);
+        Navigation.NavigateTo($"/student-details/{safeName}");
+    }
+
+    public class Student
+    {
+        public string Name { get; set; } = string.Empty;
+        public int Score { get; set; }
+    }
+}
+<style>
+    .leaderboard-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .student-card {
+        background-color: #f8f9fa;
+    }
+</style>

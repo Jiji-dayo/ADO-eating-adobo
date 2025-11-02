@@ -1,0 +1,7 @@
+/workspaces/ADO-eating-adobo/QuizDetails/obj/Debug/net8.0/QuizDetails.csproj.AssemblyReference.cache
+/workspaces/ADO-eating-adobo/QuizDetails/obj/Debug/net8.0/QuizDetails.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ADO-eating-adobo/QuizDetails/obj/Debug/net8.0/QuizDetails.AssemblyInfoInputs.cache
+/workspaces/ADO-eating-adobo/QuizDetails/obj/Debug/net8.0/QuizDetails.AssemblyInfo.cs
+/workspaces/ADO-eating-adobo/QuizDetails/obj/Debug/net8.0/QuizDetails.csproj.CoreCompileInputs.cache
+/workspaces/ADO-eating-adobo/QuizDetails/obj/Debug/net8.0/QuizDetails.MvcApplicationPartsAssemblyInfo.cache
+/workspaces/ADO-eating-adobo/QuizDetails/obj/Debug/net8.0/QuizDetails.sourcelink.json

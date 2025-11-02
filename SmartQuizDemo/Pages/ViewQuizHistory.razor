@@ -1,0 +1,199 @@
+@page "/view-quiz-history"
+@inject NavigationManager Navigation
+
+<PageTitle>View Quiz History</PageTitle>
+
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #61c2a2;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    color: #000;
+    font-weight: 600;
+}
+
+/* MAIN CONTENT */
+.view-quizzes-container {
+    padding: 40px;
+}
+
+.view-quizzes-container h3 {
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* QUIZ GRID */
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* QUIZ CARD */
+.quiz-card {
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+}
+
+.quiz-card:hover {
+    transform: translateY(-4px);
+}
+
+.quiz-card h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.quiz-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+/* QUIZ FOOTER */
+.quiz-footer {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BUTTON */
+.quiz-footer button {
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #61c2a2;
+    transition: opacity 0.2s ease;
+}
+
+.quiz-footer button:hover {
+    opacity: 0.85;
+}
+</style>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="profile-icon">👤</div>
+        <span style="color: white; font-weight: 600;">Profile</span>
+    </div>
+    <div class="nav-links">
+        <a href="/studentdashboard">Dashboard</a>
+        <a href="/notifications">Notifications</a>
+        <a href="/view-quiz-history" style="font-weight: bold;">View Quiz History</a>
+        <a href="/take-quiz">Take Quiz</a>
+        <a href="/logout" class="logout">Log out</a>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="view-quizzes-container">
+    <h3>Quizzes taken:</h3>
+
+    @if (quizzes.Count == 0)
+    {
+        <p>No quizzes taken yet.</p>
+    }
+    else
+    {
+        <div class="quiz-grid">
+            @foreach (var quiz in quizzes)
+            {
+                <div class="quiz-card">
+                    <div>
+                        <h5>@quiz.Title</h5>
+                        <p>@quiz.Description</p>
+                    </div>
+                    <div class="quiz-footer">
+                        <span>#Final score: @quiz.FinalScore</span>
+                        <button @onclick="() => ViewResults(quiz.Id)">View Results</button>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private List<QuizHistory> quizzes = new();
+
+    protected override void OnInitialized()
+    {
+        quizzes = new List<QuizHistory>
+        {
+            new QuizHistory { Id = 1, Title = "Quiz #1", Description = "quiz overview... quiz overview... quiz overview...", FinalScore = "90%" },
+            new QuizHistory { Id = 2, Title = "Quiz #2", Description = "quiz overview... quiz overview... quiz overview...", FinalScore = "85%" },
+            new QuizHistory { Id = 3, Title = "Quiz #3", Description = "quiz overview... quiz overview... quiz overview...", FinalScore = "78%" },
+            new QuizHistory { Id = 4, Title = "Quiz #4", Description = "quiz overview... quiz overview... quiz overview...", FinalScore = "88%" },
+            new QuizHistory { Id = 5, Title = "Quiz #5", Description = "quiz overview... quiz overview... quiz overview...", FinalScore = "92%" },
+            new QuizHistory { Id = 6, Title = "Quiz #6", Description = "quiz overview... quiz overview... quiz overview...", FinalScore = "75%" }
+        };
+    }
+
+    private void ViewResults(int id)
+    {
+        Navigation.NavigateTo($"/quiz-results/{id}");
+    }
+
+    public class QuizHistory
+    {
+        public int Id { get; set; }
+        public string? Title { get; set; }
+        public string? Description { get; set; }
+        public string? FinalScore { get; set; }
+    }
+}

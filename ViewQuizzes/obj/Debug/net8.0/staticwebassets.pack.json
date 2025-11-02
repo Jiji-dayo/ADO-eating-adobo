@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/ADO-eating-adobo/ViewQuizzes/obj/Debug/net8.0/scopedcss/projectbundle/ViewQuizzes.bundle.scp.css",
+      "PackagePath": "staticwebassets/ViewQuizzes.bundle.scp.css"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/ViewQuizzes/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/ViewQuizzes/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/ViewQuizzes/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/workspaces/ADO-eating-adobo/ViewQuizzes/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ViewQuizzes.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.ViewQuizzes.props",
+      "PackagePath": "build\\ViewQuizzes.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ViewQuizzes.props",
+      "PackagePath": "buildMultiTargeting\\ViewQuizzes.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ViewQuizzes.props",
+      "PackagePath": "buildTransitive\\ViewQuizzes.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

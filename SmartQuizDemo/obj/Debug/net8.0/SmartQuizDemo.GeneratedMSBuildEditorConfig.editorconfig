@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUXVpekRldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspaces/ADO-eating-adobo/SmartQuizDemo/Pages/ViewQuizHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlld1F1aXpIaXN0b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/ADO-eating-adobo/SmartQuizDemo/Pages/ViewQuizzes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlld1F1aXp6ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
